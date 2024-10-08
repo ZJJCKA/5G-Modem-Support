@@ -7,19 +7,19 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=qmi_wwan
+PKG_NAME:=qmi_wwan_m
 PKG_VERSION:=1.0
 PKG_RELEASE:=2
 
 include $(INCLUDE_DIR)/kernel.mk
 include $(INCLUDE_DIR)/package.mk
 
-define KernelPackage/qmi_wwan
+define KernelPackage/qmi_wwan_m
   SUBMENU:=WWAN Support
   TITLE:=Meig Linux USB QMI WWAN Driver
   DEPENDS:=+kmod-usb-net +kmod-usb-wdm
-  FILES:=$(PKG_BUILD_DIR)/qmi_wwan.ko
-  AUTOLOAD:=$(call AutoLoad,82,qmi_wwan)
+  FILES:=$(PKG_BUILD_DIR)/qmi_wwan_m.ko
+  AUTOLOAD:=$(call AutoLoad,82,qmi_wwan_m)
 endef
 
 define KernelPackage/qmi_wwan/description
@@ -44,4 +44,4 @@ define Build/Compile
 		modules
 endef
 
-$(eval $(call KernelPackage,qmi_wwan))
+$(eval $(call KernelPackage,qmi_wwan_m))
