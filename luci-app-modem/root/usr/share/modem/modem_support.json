@@ -90,6 +90,22 @@
                 "define_connect":"1",
                 "modes":["qmi","gobinet","ecm","mbim","rndis","ncm"]
             },
+            "rm520f-bl":{
+                "manufacturer_id":"2c7c",
+                "manufacturer":"quectel",
+                "platform":"qualcomm",
+                "data_interface":"usb",
+                "define_connect":"1",
+                "modes":["qmi","gobinet","ecm","mbim","rndis","ncm"]
+            },
+            "rm520n-eu":{
+                "manufacturer_id":"2c7c",
+                "manufacturer":"quectel",
+                "platform":"qualcomm",
+                "data_interface":"usb",
+                "define_connect":"1",
+                "modes":["qmi","gobinet","ecm","mbim","rndis","ncm"]
+            },
             "rm520n-gl":{
                 "manufacturer_id":"2c7c",
                 "manufacturer":"quectel",
