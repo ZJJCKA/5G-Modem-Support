@@ -978,7 +978,7 @@ static int qmi_wwan_probe(struct usb_interface *intf,
 }
 
 static struct usb_driver qmi_wwan_driver = {
-	.name		      = "qmi_wwan",
+	.name		      = "qmi_wwan_m",
 	.id_table	      = products,
 	.probe		      = qmi_wwan_probe,
 	.disconnect	      = usbnet_disconnect,
@@ -994,4 +994,3 @@ module_usb_driver(qmi_wwan_driver);
 MODULE_AUTHOR("Bjørn Mork <bjorn@mork.no>");
 MODULE_DESCRIPTION("Qualcomm MSM Interface (QMI) WWAN driver");
 MODULE_LICENSE("GPL");
-
