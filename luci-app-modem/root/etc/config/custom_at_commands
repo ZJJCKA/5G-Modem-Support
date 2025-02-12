@@ -412,6 +412,10 @@ config custom-commands
 	option command 'AT^HFREQINFO?'
 
 config custom-commands
+	option description '锁定5G频段 > AT^NRFREQLOCK'
+	option command 'AT^NRFREQLOCK=3,0,3,"41,78,79"'
+
+config custom-commands
 	option description '查询当前拨号模式 > AT^SETMODE?'
 	option command 'AT^SETMODE?'
 
