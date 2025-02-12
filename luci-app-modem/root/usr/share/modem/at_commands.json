@@ -192,6 +192,7 @@
 				{"查询锁定5G频段 > AT^NRFREQLOCK?":"AT^NRFREQLOCK?"},
 				{"锁定5G频段 > AT^NRFREQLOCK":"AT^NRFREQLOCK=3,0,3,"41,78,79""},
 				{"解除锁定5G频段 > AT^NRFREQLOCK=0":"AT^NRFREQLOCK=0"},
+				{"修改imei串号 > AT^PHYNUM=IMEI":"AT^PHYNUM=IMEI,123456789"},
 				{"查询当前拨号模式 > AT^SETMODE?":"AT^SETMODE?"},
 				{"ECM拨号模式（Linux） > AT^SETMODE=0":"AT^SETMODE=0"},
 				{"NCM拨号模式（Windows） > AT^SETMODE=1":"AT^SETMODE=1"},
