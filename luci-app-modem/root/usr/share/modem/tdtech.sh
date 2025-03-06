@@ -733,9 +733,9 @@ tdtech_network_info()
     ambr_dl_tmp=$(echo "$response" | awk -F',' '{print $3}')
 
     #AMBR UL（上行签约速率，单位，Mbps）
-    ambr_ul=$(awk "BEGIN{ printf \"%.2f\", $ambr_ul_tmp / 1000 }" | sed 's/\.*0*$//')
+    ambr_ul=$(awk "BEGIN{ printf \"%.2f\", $ambr_dl_tmp / 1000 }" | sed 's/\.*0*$//')
     #AMBR DL（下行签约速率，单位，Mbps）
-    ambr_dl=$(awk "BEGIN{ printf \"%.2f\", $ambr_dl_tmp / 1000 }" | sed 's/\.*0*$//')
+    ambr_dl=$(awk "BEGIN{ printf \"%.2f\", $ambr_ul_tmp / 1000 }" | sed 's/\.*0*$//')
 
     # #速率统计
     # at_command='AT^DSFLOWQRY'
